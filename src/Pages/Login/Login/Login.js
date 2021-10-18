@@ -1,7 +1,9 @@
 import React from 'react';
+import useAuth from '../../../hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
+    const { googleSignIn } = useAuth();
     return (
         <div className="container my-5 py-5">
 
@@ -24,6 +26,10 @@ const Login = () => {
                         <button type="submit" className="btn btn-primary px-4">Login</button>
                     </div>
                 </form>
+                <hr />
+                <div className="text-center">
+                    <button onClick={googleSignIn} type="submit" className="btn btn-danger px-4">Google Sign In</button>
+                </div>
             </div>
         </div>
     );

@@ -1,38 +1,42 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import logo from '../../img/Logo/logo.png';
 import './Header.css';
+import useAuth from '../../hooks/useAuth';
 
 const Header = () => {
+    const { user, logOut } = useAuth();
     return (
-        <div>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-                <Container>
-                    <Navbar.Brand href="#home" className="d-flex align-items-center">
-                        <img src={logo}
-                            alt="Site Logo"
-                            width="50"
-                            height="50" />
-                        <h4 className="fw-bold mt-2">PatroMedic</h4>
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar sticky="top" collapseOnSelect expand="lg" bg="light" variant="light">
+            <Container>
+                <Navbar.Brand href="#home" className="d-flex align-items-center">
+                    <img src={logo}
+                        alt="Site Logo"
+                        width="50"
+                        height="50" />
+                    <h4 className="fw-bold mt-2">PatroMedic</h4>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
 
-                        <Nav className="mx-auto">
-                            <Nav.Link className="fw-bold text-dark" href="/home">Home</Nav.Link>
-                            <Nav.Link className="fw-bold text-dark" href="/services">Services</Nav.Link>
-                            <Nav.Link className="fw-bold text-dark" href="/pricing">Pricing</Nav.Link>
-                        </Nav>
+                    <Nav className="mx-auto">
+                        <Nav.Link as={Link} className="fw-bold text-dark" to="/home">Home</Nav.Link>
+                        <Nav.Link as={Link} className="fw-bold text-dark" to="/services">Services</Nav.Link>
+                        <Nav.Link as={Link} className="fw-bold text-dark" to="/pricing">Pricing</Nav.Link>
+                    </Nav>
 
-                        <Navbar.Text className="d-flex align-items-center">
-                            <Nav.Link className="fw-bold text-dark" href="/login">Login</Nav.Link>
-                            {/* Signed in as: <a href="#login">Riad Rahman</a> */}
-                        </Navbar.Text>
+                    <Navbar.Text className="d-flex align-items-center">
+                        {user?.email ?
+                            <Nav.Link onClick={logOut}>Logut</Nav.Link> :
+                            <Nav.Link as={Link} className="fw-bold text-dark" to="/login">Login</Nav.Link>
+                        }
+                        <a href="#login">{user?.displayName}</a>
+                    </Navbar.Text>
 
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-        </div>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
 };
 
