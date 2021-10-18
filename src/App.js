@@ -6,6 +6,7 @@ import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import Details from './Pages/Details/Details';
 import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -26,9 +27,9 @@ function App() {
               <Login></Login>
             </Route>
 
-            <Route path="/service/:serviceID">
+            <PrivateRoute path="/service/:serviceID">
               <Details></Details>
-            </Route>
+            </PrivateRoute>
 
           </Switch>
           <Footer></Footer>

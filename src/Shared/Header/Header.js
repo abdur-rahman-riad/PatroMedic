@@ -28,10 +28,10 @@ const Header = () => {
 
                     <Navbar.Text className="d-flex align-items-center">
                         {user?.email ?
-                            <Nav.Link onClick={logOut}>Logut</Nav.Link> :
+                            <Nav.Link onClick={logOut} className="fw-bold text-dark">Logut</Nav.Link> :
                             <Nav.Link as={Link} className="fw-bold text-dark" to="/login">Login</Nav.Link>
                         }
-                        <a href="#login">{user?.displayName}</a>
+                        ( {user?.displayName} )
                     </Navbar.Text>
 
                 </Navbar.Collapse>
