@@ -31,7 +31,7 @@ const Header = () => {
                             <Nav.Link onClick={logOut} className="fw-bold text-dark">Logut</Nav.Link> :
                             <Nav.Link as={Link} className="fw-bold text-dark" to="/login">Login</Nav.Link>
                         }
-                        ( {user?.displayName} )
+                        {user?.displayName}
                     </Navbar.Text>
 
                 </Navbar.Collapse>

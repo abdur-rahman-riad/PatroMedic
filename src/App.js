@@ -7,6 +7,7 @@ import Login from './Pages/Login/Login/Login';
 import Details from './Pages/Details/Details';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
             <PrivateRoute path="/service/:serviceID">
               <Details></Details>
             </PrivateRoute>
+
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
 
           </Switch>
           <Footer></Footer>
