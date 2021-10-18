@@ -24,8 +24,9 @@ const Header = () => {
                             <Nav.Link className="fw-bold text-dark" href="/pricing">Pricing</Nav.Link>
                         </Nav>
 
-                        <Navbar.Text>
-                            Signed in as: <a href="#login">Riad Rahman</a>
+                        <Navbar.Text className="d-flex align-items-center">
+                            <Nav.Link className="fw-bold text-dark" href="/login">Login</Nav.Link>
+                            {/* Signed in as: <a href="#login">Riad Rahman</a> */}
                         </Navbar.Text>
 
                     </Navbar.Collapse>
