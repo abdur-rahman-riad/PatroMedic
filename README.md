@@ -1,6 +1,6 @@
 # PatroMedic Health Care Service
 
-Live Site Link: [https://patromedic.netlify.app/](https://patromedic.netlify.app/)
+Live Site Link: [https://patromedic.web.app/](https://patromedic.web.app/)
 
 PatroMedic is an Online Health Support Providing platform where you will get your needed support and care. we are always ready to support you. 
 
