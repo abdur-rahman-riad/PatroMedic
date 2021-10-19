@@ -8,7 +8,7 @@ const Banner = () => {
             <div className="row align-items-center my-5 py-3">
                 <div className="col-md-6">
                     <h2 className="fw-bold">Lorem ipsum dolor sit amet <br /> ipsum dolor.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptate voluptates amet ut fugit est asperiores soluta libero ex ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, numquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, molestiae?</p>
+                    <p>We assured to you that we will provide responsible treatment to you. It’s our duty for any patients. More information below. Every patient getting best care from us. again is there anyone who of itself, because it is pain, but because occasionally circumstance procure him some great pleasure</p>
                     <button className="btn btn-dark">View More</button>
                 </div>
 

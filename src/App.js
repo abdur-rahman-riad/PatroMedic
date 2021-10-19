@@ -8,6 +8,7 @@ import Details from './Pages/Details/Details';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import NotFound from './Pages/NotFound/NotFound';
+import Contact from './Pages/Contact/Contact';
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
 
             <Route path="/home">
               <Home></Home>
+            </Route>
+
+            <Route path="/contact">
+              <Contact></Contact>
             </Route>
 
             <Route path="/login">
