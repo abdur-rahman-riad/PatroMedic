@@ -23,7 +23,7 @@ const Header = () => {
                     <Nav className="mx-auto">
                         <Nav.Link as={Link} className="fw-bold text-dark" to="/home">Home</Nav.Link>
                         <Nav.Link as={Link} className="fw-bold text-dark" to="/services">Services</Nav.Link>
-                        <Nav.Link as={Link} className="fw-bold text-dark" to="/pricing">Pricing</Nav.Link>
+                        <Nav.Link as={Link} className="fw-bold text-dark" to="/contact">Contact</Nav.Link>
                     </Nav>
 
                     <Navbar.Text className="d-flex align-items-center">
