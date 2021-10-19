@@ -15,7 +15,7 @@ const Category = () => {
                     <div className="text-center border shadow-sm rounded p-2">
                         <img src={treatment} width="100px" className="mb-2" alt="" />
                         <h5 className="fw-bold">Medical Treatment</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus id mollitia officia quo impedit reiciendis voluptatum error, aliquam vel?</p>
+                        <p>In Patromedic you will get all medical treatment support from specialists.</p>
                         <Link>Get Appoinment</Link>
                     </div>
                 </div>
@@ -23,15 +23,15 @@ const Category = () => {
                     <div className="text-center border shadow-sm rounded p-2">
                         <img src={ambulance} width="100px" className="mb-2" alt="" />
                         <h5 className="fw-bold">Emergency Help</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus id mollitia officia quo impedit reiciendis voluptatum error, aliquam vel?</p>
+                        <p>We provide 24 hours emergency help. Anytime, anywhere we are with you</p>
                         <Link>Call us Now</Link>
                     </div>
                 </div>
                 <div className="col-md-3">
                     <div className="text-center border shadow-sm rounded p-2">
                         <img src={direction} width="100px" className="mb-2" alt="" />
-                        <h5 className="fw-bold">Location & Direction</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus id mollitia officia quo impedit reiciendis voluptatum error, aliquam vel?</p>
+                        <h5 className="fw-bold">Pharmacies</h5>
+                        <p>We will get the nearby pharmacy location. These Pharmacies provide good medicine.</p>
                         <Link>Get Direction</Link>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ const Category = () => {
                     <div className="text-center border shadow-sm rounded p-2">
                         <img src={doctor} width="100px" className="mb-2" alt="" />
                         <h5 className="fw-bold">Qualified Doctor</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit temporibus id mollitia officia quo impedit reiciendis voluptatum error, aliquam vel?</p>
+                        <p>PatroMedic will provide you, Qualified Doctor, for your health information and support</p>
                         <Link>Find a Doctor</Link>
                     </div>
                 </div>

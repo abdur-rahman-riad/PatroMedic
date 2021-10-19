@@ -5,11 +5,10 @@ const Service = (props) => {
     const { key, name, img, description } = props.service;
     return (
         <div className="col-md-4">
-            <div className="card">
+            <div className="card h-100">
                 <img src={img} className="card-img-top img-fluid" width="100%" alt="Service Img" />
                 <div className="card-body">
-                    <h5>{key}</h5>
-                    <h4 className="card-title">{name}</h4>
+                    <h5 className="card-title fw-bold">{name}</h5>
                     <p className="card-text">{description}</p>
                 </div>
                 <div className="card-footer">
